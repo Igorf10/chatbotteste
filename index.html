@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="clientinterface.css">
+    <title>ChatBot</title>
+
+    
+</head>
+<body>
+
+    <div id="chatContainer">
+            <div id="headerchat">
+        <div class="header-avatar">
+            <img src="img/farma+.png" alt="Bot">
+        </div>
+
+        <div class="header-info">
+            <h1>farma Chat</h1>
+            <span>Online</span>
+        </div>
+    </div>
+
+        <div id="messages">
+            <!-- Mensagens aqui -->
+        </div>
+
+
+
+        <div id="inputArea">
+
+            <div id="recordingIndicator" class="hidden">
+    <div class="audio-bars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <span>Gravando...</span>
+</div>
+
+            
+            <textarea type="text"
+                   id="userInput"
+                   
+                   placeholder="Digite sua mensagem..."></textarea>
+                  
+
+            <button id="btnAudio">
+                <i class="bi bi-mic" id="micIcon"></i>
+            </button>
+
+            <button id="btnEnviar" onclick="sendMessage()">
+                Enviar
+            </button>
+
+
+
+        </div>
+            </div>
+              </div>
+
+</body>
+<script src="AddMessage.js"></script>
+<script src="showbot.js"></script>
+<script src="sendMessage.js"></script>
+<script src="audiosendMessage.js"></script>
+</html>
